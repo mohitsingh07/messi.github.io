@@ -60,7 +60,33 @@ section .btnone{
 
 }
 
-@keyframes changetext {
-    0%{content:"FIFA 202";}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    
 
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/Batman_Logo_in_Black_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-duration: 10s ;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards ;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out ;
+}
+
+@keyframes animate{
+    0%{ background-image: url('../images/wallpapertip_lionel-messi-wallpaper-download_1562775.jpg');}
+    33%{ background-image: url('../images/wallpapertip_messi-argentina-wallpaper_1560673.jpg');}
+    66%{ background-image: url('../images/wallpapertip_messi-wallpaper_56806.jpg');}
+    100%{ background-image: url('../images/5f454a4242f43f001ddfee74.jpg');}
 }
